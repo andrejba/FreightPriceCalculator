@@ -84,7 +84,17 @@ passport.deserializeUser(function(id, done) {
 
 // API endpoint for calculating freight
 app.post('/api/calculateFreight', (req, res) => {
-  // ... (Your existing code for calculating freight)
+  const { weight, distance } = req.body;
+
+  // Define the factors
+  const basePrice = 50;
+  const weightFactor = 0.10;
+  const distanceFactor = 0.05;
+
+  // Calculate the freight cost
+  const freightCost = basePrice + (weightFactor * weight) + (distanceFactor * distance);
+
+  res.json({ success: true, freightCost });
 });
 
 // Login Endpoint

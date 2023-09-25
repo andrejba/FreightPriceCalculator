@@ -13,5 +13,13 @@
     </div>
   </div>
   <script src="js/main.js"></script>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const freightCost = urlParams.get('freightCost');
+    document.getElementById('result').innerHTML = `Calculated Freight Cost: $${freightCost}`;
+</script>
+
+
 </body>
 </html>

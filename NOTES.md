@@ -31,20 +31,3 @@ Dieselprice and location, distance etc.
 .env must be in the root directiory and not be tracked by version control like Git
 
 
-- FreightPriceCalculator (Your Main Project Folder)
-  - frontend
-    - css
-      - styles.css (if you have one, move it here)
-    - js
-      - main.js (if you have one, move it here)
-    - images (any images you have for the frontend)
-    - index.html (move it here if it exists)
-    - calculate.html (create this new file)
-    - results.html (create this new file)
-    - login.html (create this new file)
-    - register.html (create this new file)
-  - node_modules (this folder is auto-generated when you run npm install)
-  - server.js
-  - package.json
-  - .env
-  ...
